@@ -13,6 +13,7 @@ class ssh::sshd_config (
   $permitrootlogin        = undef,
   $pubkeyauthentication   = undef,
   $passwordauthentication = undef,
+  $authorizedkeyscommand  = undef,
   $x11forwarding          = undef,
   $template_dir           = $::ssh::params::template_dir,
 ) inherits ::ssh::params {
